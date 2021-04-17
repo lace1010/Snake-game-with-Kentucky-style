@@ -1,5 +1,13 @@
 const express = require("express");
 const app = express();
+const helmet = require("helmet");
+
+app.use(
+  helmet({
+    dnsPrefetchControl: false,
+    contentSecurityPolicy: false,
+  })
+);
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
