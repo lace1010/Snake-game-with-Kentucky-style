@@ -22,7 +22,7 @@ let currentSnake = [
 ];
 let direction = 1;
 let interval = 0;
-let intervalTime = 80;
+let intervalTime = 70;
 let randomAppleSpot = 0;
 let score = 0;
 let highScore = 176;
@@ -484,7 +484,7 @@ function styleChange() {
 function levelChange() {
   if (mediumSpeed) {
     $("#level-change-button").text("Medium Style");
-    intervalTime = 80;
+    intervalTime = 70;
     mediumSpeed = false;
   } else {
     $("#level-change-button").text("Hard Style");
